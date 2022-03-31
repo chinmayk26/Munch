@@ -8,67 +8,67 @@
     {
       "src": "images/about.jpg",
       "type": "image/jpg",
-      "sizes": "48x48"
+      "sizes": "512x512"
     },
     {
       "src": "images/blogs 1.jpg",
       "type": "image/jpg",
-      "sizes": "96x96"
+      "sizes": "512x512"
     },
     {
       "src": "images/brita.png",
       "type": "image/png",
-      "sizes": "144x144"
+      "sizes": "512x512"
     },
     {
       "src": "images/bsk.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     },
     {
       "src": "images/burger.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     },
     {
       "src": "images/chef-1.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     },
     {
       "src": "images/chef.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     },
     {
       "src": "images/deliver-1.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     },
     {
       "src": "images/deliver.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     },
     {
       "src": "images/dunkin.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     },
     {
       "src": "images/icon.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     },
     {
       "src": "images/logo 1.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     },
     {
       "src": "images/logo 2.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     }
   ],
   "start_url": "https://munch756.herokuapp.com/homepage.php"
