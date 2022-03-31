@@ -64,6 +64,7 @@
       "src": "images/logo 1.png",
       "type": "image/png",
       "sizes": "196x196"
+      "purpose": "maskable"
     },
     {
       "src": "images/logo 2.png",
@@ -71,13 +72,5 @@
       "sizes": "196x196"
     }
   ],
-  "icons": [
-    {
-      "src": "images/about.jpg",
-      "type": "image/jpg",
-      "sizes": "512x512"
-      "purpose": "any maskable"
-    },
-    ]
   "start_url": "https://munch756.herokuapp.com/homepage.php"
 }
