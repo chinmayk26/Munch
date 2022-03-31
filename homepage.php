@@ -3,6 +3,7 @@
 <html>
 
 <head>
+ <link rel="apple-touch-icon" href="images/logo 2.png">
  <meta name="theme-color" content="#4A90E2"/>
  <meta name="viewport" content="width=device-width">
  
