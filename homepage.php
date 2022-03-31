@@ -4,7 +4,7 @@
 
 <head>
  
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="./manifest.json">
   <meta charset="utf-8">
   <title>Munch Square</title>
 
