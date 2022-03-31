@@ -1,4 +1,4 @@
-const cacheName = 'news-v1';
+const cacheName = 'Munch';
 const staticAssets = [
   './',
   './index.html',
