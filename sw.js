@@ -1,58 +1,47 @@
-self.addEventListener("fetch", event => {
-    console.log("You fetched " + event.url);
-});
-
-const ASSETS = [
-    "/style.css",
-    "/index.css",
-    "/index.html",
-    "/dummy.html",
-    "/"
+const cacheName = 'news-v1';
+const staticAssets = [
+  './',
+  './index.html',
+  './index.css',
+  './style.html',
+  './dummy.html',
 ];
 
-
-let cache_name = "SimiCart"; // The string used to identify our cache
-
-self.addEventListener("install", event => {
-    console.log("installing...");
-    event.waitUntil(
-        caches
-            .open(cache_name)
-            .then(cache => {
-                return cache.addAll(ASSETS);
-            })
-            .catch(err => console.log(err))
-    );
+self.addEventListener('install', async e => {
+  const cache = await caches.open(cacheName);
+  await cache.addAll(staticAssets);
+  return self.skipWaiting();
 });
 
-self.addEventListener("fetch", event => {
-    if (event.request.url === "https://onlinefooddeliverynew.herokuapp.com/homepage.php") {
-        // or whatever your app's URL is
-        event.respondWith(
-            fetch(event.request).catch(err =>
-                self.cache.open(cache_name).then(cache => cache.match("/offline.html"))
-            )
-        );
-    } else {
-        event.respondWith(
-            fetch(event.request).catch(err =>
-                caches.match(event.request).then(response => response)
-            )
-        );
-    }
+self.addEventListener('activate', e => {
+  self.clients.claim();
 });
 
+self.addEventListener('fetch', async e => {
+  const req = e.request;
+  const url = new URL(req.url);
 
-// self.addEventListener('install', function(event) {
-//     console.log("Installed");
-// });
+  if (url.origin === location.origin) {
+    e.respondWith(cacheFirst(req));
+  } else {
+    e.respondWith(networkAndCache(req));
+  }
+});
 
-// importScripts('/cache-polyfill.js');
+async function cacheFirst(req) {
+  const cache = await caches.open(cacheName);
+  const cached = await cache.match(req);
+  return cached || fetch(req);
+}
 
-// self.addEventListener('activate', function(event) {
-//    console.log("Activated");
-// });
-
-// self.addEventListener("fetch", event => {
-//     console.log("You fetched " + event.url);
-// });
+async function networkAndCache(req) {
+  const cache = await caches.open(cacheName);
+  try {
+    const fresh = await fetch(req);
+    await cache.put(req, fresh.clone());
+    return fresh;
+  } catch (e) {
+    const cached = await cache.match(req);
+    return cached;
+  }
+}
