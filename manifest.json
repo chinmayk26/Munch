@@ -6,25 +6,69 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "assets/icons/launcher-icon-1x.png",
-      "type": "image/png",
+      "src": "images/about.jpg",
+      "type": "image/jpg",
       "sizes": "48x48"
     },
     {
-      "src": "assets/icons/launcher-icon-2x.png",
-      "type": "image/png",
+      "src": "images/blogs 1.jpg",
+      "type": "image/jpg",
       "sizes": "96x96"
     },
     {
-      "src": "assets/icons/launcher-icon-3x.png",
+      "src": "images/brita.png",
       "type": "image/png",
       "sizes": "144x144"
     },
     {
-      "src": "assets/icons/launcher-icon-4x.png",
+      "src": "images/bsk.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/burger.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/chef-1.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/chef.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/deliver-1.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/deliver.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/dunkin.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/logo 1.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/logo 2.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
   "start_url": "https://onlinefooddeliverynew.herokuapp.com/homepage.php"
-}
