@@ -59,6 +59,7 @@
       "src": "images/icon.png",
       "type": "image/png",
       "sizes": "512x512"
+      "purpose": "any maskable"
     },
     {
       "src": "images/logo 1.png",
