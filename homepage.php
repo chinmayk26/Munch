@@ -5,7 +5,7 @@
 <head>
  <link rel="apple-touch-icon" href="images/logo 2.png">
  <meta name="theme-color" content="#4A90E2"/>
- <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
  
   <link rel="manifest" href="./manifest.json">
   <meta charset="utf-8">
